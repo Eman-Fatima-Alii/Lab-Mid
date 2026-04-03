@@ -118,7 +118,7 @@ export const crudAPI = {
 
 // Specific entity APIs for convenience
 export const menuAPI = {
-  getAll: (params = {}) => crudAPI.getAll('menuitems', params),
+  getAll: (params) => crudAPI.getAll('menuitems', params),
   getById: (id) => crudAPI.getById('menuitems', id),
   create: (data) => crudAPI.create('menuitems', data),
   update: (id, data) => crudAPI.update('menuitems', id, data),
@@ -126,7 +126,7 @@ export const menuAPI = {
 };
 
 export const orderAPI = {
-  getAll: (params = {}) => crudAPI.getAll('orders', params),
+  getAll: (params) => crudAPI.getAll('orders', params),
   getById: (id) => crudAPI.getById('orders', id),
   create: (data) => crudAPI.create('orders', data),
   update: (id, data) => crudAPI.update('orders', id, data),
@@ -134,7 +134,7 @@ export const orderAPI = {
 };
 
 export const orderItemAPI = {
-  getAll: (params = {}) => crudAPI.getAll('orderitems', params),
+  getAll: (params) => crudAPI.getAll('orderitems', params),
   getById: (id) => crudAPI.getById('orderitems', id),
   create: (data) => crudAPI.create('orderitems', data),
   update: (id, data) => crudAPI.update('orderitems', id, data),
@@ -142,7 +142,7 @@ export const orderItemAPI = {
 };
 
 export const paymentAPI = {
-  getAll: (params = {}) => crudAPI.getAll('payments', params),
+  getAll: (params) => crudAPI.getAll('payments', params),
   getById: (id) => crudAPI.getById('payments', id),
   create: (data) => crudAPI.create('payments', data),
   update: (id, data) => crudAPI.update('payments', id, data),
@@ -150,7 +150,7 @@ export const paymentAPI = {
 };
 
 export const discountAPI = {
-  getAll: (params = {}) => crudAPI.getAll('discounts', params),
+  getAll: (params) => crudAPI.getAll('discounts', params),
   getById: (id) => crudAPI.getById('discounts', id),
   create: (data) => crudAPI.create('discounts', data),
   update: (id, data) => crudAPI.update('discounts', id, data),
@@ -158,21 +158,21 @@ export const discountAPI = {
 };
 
 export const studentAPI = {
-  getAll: (params = {}) => crudAPI.getAll('students', params),
+  getAll: (params) => crudAPI.getAll('students', params),
   getById: (id) => crudAPI.getById('students', id),
   update: (id, data) => crudAPI.update('students', id, data),
   delete: (id) => crudAPI.delete('students', id),
 };
 
 export const teacherAPI = {
-  getAll: (params = {}) => crudAPI.getAll('teachers', params),
+  getAll: (params) => crudAPI.getAll('teachers', params),
   getById: (id) => crudAPI.getById('teachers', id),
   update: (id, data) => crudAPI.update('teachers', id, data),
   delete: (id) => crudAPI.delete('teachers', id),
 };
 
 export const adminAPI = {
-  getAll: (params = {}) => crudAPI.getAll('admins', params),
+  getAll: (params) => crudAPI.getAll('admins', params),
   getById: (id) => crudAPI.getById('admins', id),
   update: (id, data) => crudAPI.update('admins', id, data),
   delete: (id) => crudAPI.delete('admins', id),
