@@ -285,26 +285,6 @@ JWT_EXPIRE=7d
 NODE_ENV=development
 ```
 
----
-
-## 🐛 Troubleshooting
-
-**MongoDB Connection Error?**
-- Ensure MongoDB is running: `mongod --dbpath "C:\data\db"`
-- Check connection string in `backend/.env`
-
-**Port already in use?**
-- Windows: `netstat -ano | findstr :5000` then `taskkill /PID <PID> /F`
-- Linux/Mac: `lsof -ti:5000 | xargs kill -9`
-
-**Token invalid?**
-- Clear browser sessionStorage
-- Login again to get fresh token
-
-See [PRODUCTION_SETUP.md#troubleshooting](PRODUCTION_SETUP.md#troubleshooting) for more help.
-
----
-
 ## 📞 Support
 
 - **Email:** cafeteria@comsats.edu.pk
@@ -328,3 +308,16 @@ Your COMSATS Cafeteria Management System is now a **fully functional, profession
 ---
 
 *Built with ❤️ for COMSATS University*
+
+<img width="1600" height="900" alt="Screenshot (210)" src="https://github.com/user-attachments/assets/170a3565-7793-4cc6-b0e4-4a5ea36d40b2" />
+<img width="1600" height="900" alt="Screenshot (211)" src="https://github.com/user-attachments/assets/45623eb7-44d9-49f1-9708-8c7dd23cadde" />
+<img width="1600" height="900" alt="Screenshot (212)" src="https://github.com/user-attachments/assets/2d6e03a1-d512-461d-a115-b942e632b256" />
+<img width="1600" height="900" alt="Screenshot (213)" src="https://github.com/user-attachments/assets/db18b395-1822-4d65-afaa-c2b6eaeb4a7d" />
+<img width="1600" height="900" alt="Screenshot (215)" src="https://github.com/user-attachments/assets/7e9d8380-ba38-43a2-8cbf-84fb0d7ed3da" />
+<img width="1600" height="900" alt="Screenshot (216)" src="https://github.com/user-attachments/assets/b6c92a20-ee66-47c5-bb05-2ce13697c75e" />
+
+
+
+
+
+
