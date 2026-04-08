@@ -8,6 +8,7 @@ import rateLimit from 'express-rate-limit';
 import connectDB from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
 import apiRoutes from './routes/apiRoutes.js';
+import phoneAuthRoutes from './routes/phoneAuthRoutes.js';
 
 // Load environment variables
 dotenv.config();
@@ -59,6 +60,7 @@ app.get('/api/health', (req, res) => {
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/phone-auth', phoneAuthRoutes);
 app.use('/api', apiRoutes);
 
 // Error handling middleware

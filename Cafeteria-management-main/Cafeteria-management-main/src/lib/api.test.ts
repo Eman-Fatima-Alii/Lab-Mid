@@ -1,8 +1,10 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach, vi, beforeAll } from 'vitest';
 import { authAPI, menuAPI } from '../lib/api';
 
 // Mock fetch for testing
-global.fetch = vi.fn();
+beforeAll(() => {
+  global.fetch = vi.fn() as any;
+});
 
 describe('API Tests', () => {
   beforeEach(() => {
